@@ -1,0 +1,11 @@
+# 1. 初始化專案
+# 1. 進入目錄並初始化
+cd D:\Google_Cloud\House_sale
+git init
+git add .
+git commit -m "feat: complete landing page and advertising strategy for 1% commission"
+
+# 2. 推送至 GitHub（請將 <YOUR_GITHUB_USERNAME> 換成您的帳號）
+git branch -M main
+git remote add origin https://github.com/wensi88/house-campaign.git
+git push -u origin main
