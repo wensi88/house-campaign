@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wensi88.github.io/house-campaign/sitemap.xml
