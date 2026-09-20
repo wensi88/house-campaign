@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>限時特選專案｜成家僅收 1% 買賣服務費・精選三峽/西門雙捷運好宅</title>
+    <title>限時特選專案｜成家僅收 1% 買方服務費・精選三峽/西門雙捷運好宅</title>
     <meta name="description"
-        content="買房省下高額仲介費！本專案強攻三峽【樂河郡-尚河】1,628萬 2房+車、西門【榮耀西門】3,770萬全新捷運景觀宅。透過專屬通路，買賣雙方各僅收 1% 服務費，立省 16~38 萬！立即撥打 0933-068-110 預約賞屋。">
+        content="買房省下高額仲介費！本專案強攻三峽【樂河郡-尚河】1,628萬 2房+車、西門【榮耀西門】3,770萬全新捷運景觀宅。透過專屬通路，買方僅收 1% 服務費，立省 16~38 萬！立即撥打 0933-068-110 預約賞屋。">
 
     <!-- Open Graph for Social Share -->
-    <meta property="og:title" content="限時特選專案｜成交僅收 1% 買賣服務費・精選優質美廈">
+    <meta property="og:title" content="限時特選專案｜成交僅收 1% 買方服務費・精選優質美廈">
     <meta property="og:description"
         content="傳統房仲買賣收滿 2%~6%？專案直享 1% 優惠費率，現省 16.28 萬 ～ 37.7 萬元！三峽樂河郡 1628萬、西門捷運140米 3770萬。">
     <meta property="og:type" content="website">
@@ -42,7 +42,7 @@
     <header
         class="gradient-banner text-white py-3 px-4 text-center font-bold sticky top-0 z-50 shadow-md flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="animate-pulse">🔥</span>
-        <span>震撼讓利：專屬通道委託成交，買賣雙方「僅收買方 1% 服務費」！現省數十萬成家金</span>
+        <span>震撼讓利：專屬通道委託成交，買方「僅收 1% 服務費」！現省數十萬成家金</span>
     </header>
 
     <main class="maxw-4xl mx-auto px-4 py-8 space-y-8">
@@ -96,7 +96,7 @@
                 <div
                     class="bg-gradient-to-br from-red-50 to-orange-50 p-5 rounded-xl border border-red-100 text-center">
                     <span class="text-xs sm:text-sm text-red-700 font-semibold block mb-1">
-                        傳統房仲 2% 買方費 vs 本專案 1% 買方費：
+                        傳統房仲 2% 買方服務費 vs 本專案 1% 買方服務費：
                     </span>
                     <div class="text-3xl sm:text-4xl font-black text-red-600 tracking-tight">
                         現省 <span id="savings">37.7</span> 萬元
@@ -331,8 +331,8 @@
             const val = parseFloat(input.value) || 0;
             // 買方省 1% (2% - 1%)
             const buyerSaved = (val * 0.01).toFixed(1);
-            // 買賣雙方合計省 4% ((2%+4%) - (1%+1%) = 4%)
-            const totalSaved = (val * 0.04).toFixed(1);
+            // 買賣雙方合計省 4% ((2%+4%) - (1%+3%) = 2%)
+            const totalSaved = (val * 0.02).toFixed(1);
 
             savings.innerText = buyerSaved;
             if (totalSavings) {
