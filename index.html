@@ -1,48 +1,56 @@
 <!-- 同步 House_sale.html 作為根目錄入口 index.html -->
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>限時特選專案｜成家僅收 1% 買賣服務費・精選三峽/西門雙捷運好宅</title>
-    <meta name="description" content="買房省下高額仲介費！本專案強攻三峽【樂河郡-尚河】1,628萬 2房+車、西門【榮耀西門】3,770萬全新捷運景觀宅。透過專屬通路，買賣雙方各僅收 1% 服務費，立省 16~38 萬！立即撥打 0933-068-110 預約賞屋。">
-    
+    <meta name="description"
+        content="買房省下高額仲介費！本專案強攻三峽【樂河郡-尚河】1,628萬 2房+車、西門【榮耀西門】3,770萬全新捷運景觀宅。透過專屬通路，買賣雙方各僅收 1% 服務費，立省 16~38 萬！立即撥打 0933-068-110 預約賞屋。">
+
     <!-- Open Graph for Social Share -->
     <meta property="og:title" content="限時特選專案｜成交僅收 1% 買賣服務費・精選優質美廈">
-    <meta property="og:description" content="傳統房仲買賣收滿 2%~6%？專案直享 1% 優惠費率，現省 16.28 萬 ～ 37.7 萬元！三峽樂河郡 1628萬、西門捷運140米 3770萬。">
+    <meta property="og:description"
+        content="傳統房仲買賣收滿 2%~6%？專案直享 1% 優惠費率，現省 16.28 萬 ～ 37.7 萬元！三峽樂河郡 1628萬、西門捷運140米 3770萬。">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://img2.591.com.tw/house/2026/09/15/178944661541367400.jpg">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         .gradient-banner {
             background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
         }
+
         .card-hover:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12);
         }
+
         .sticky-bottom-bar {
             box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 font-sans pb-24 md:pb-12 antialiased">
 
     <!-- 頂部震撼促銷橫幅 -->
-    <header class="gradient-banner text-white py-3 px-4 text-center font-bold sticky top-0 z-50 shadow-md flex items-center justify-center gap-2 text-sm sm:text-base">
+    <header
+        class="gradient-banner text-white py-3 px-4 text-center font-bold sticky top-0 z-50 shadow-md flex items-center justify-center gap-2 text-sm sm:text-base">
         <span class="animate-pulse">🔥</span>
-        <span>震撼讓利：專屬通道委託成交，買賣雙方「僅收 1% 服務費」！現省數十萬成家金</span>
+        <span>震撼讓利：專屬通道委託成交，買賣雙方「僅收買方 1% 服務費」！現省數十萬成家金</span>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-8 space-y-8">
-        
+    <main class="maxw-4xl mx-auto px-4 py-8 space-y-8">
+
         <!-- 主標題區 -->
         <section class="text-center space-y-3">
-            <span class="inline-block bg-red-100 text-red-700 text-xs sm:text-sm font-semibold px-3.5 py-1 rounded-full border border-red-200">
+            <span
+                class="inline-block bg-red-100 text-red-700 text-xs sm:text-sm font-semibold px-3.5 py-1 rounded-full border border-red-200">
                 <i class="fa-solid fa-tags mr-1"></i> 打破傳統高趴數・給您真正的買賣讓利
             </span>
             <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -56,12 +64,13 @@
         <!-- 1% 服務費省錢即時試算卡片 -->
         <section class="bg-white rounded-2xl shadow-sm p-6 border border-slate-200">
             <div class="flex items-center gap-2 mb-4">
-                <div class="w-8 h-8 rounded-lg bg-red-100 text-red-600 flex items-center justify-center font-bold text-lg">
+                <div
+                    class="w-8 h-8 rounded-lg bg-red-100 text-red-600 flex items-center justify-center font-bold text-lg">
                     💰
                 </div>
                 <h2 class="text-lg sm:text-xl font-bold text-slate-900">即時試算：改用 1% 服務費能為您省下多少？</h2>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-4 items-center">
                 <div class="space-y-2">
                     <label for="housePrice" class="block text-sm font-semibold text-slate-700">
@@ -73,16 +82,19 @@
                         <span class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 font-bold">萬元</span>
                     </div>
                     <div class="flex gap-2 pt-1">
-                        <button onclick="setPrice(1628)" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition">
+                        <button onclick="setPrice(1628)"
+                            class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition">
                             三峽物件 (1,628萬)
                         </button>
-                        <button onclick="setPrice(3770)" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition">
+                        <button onclick="setPrice(3770)"
+                            class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-medium transition">
                             萬華物件 (3,770萬)
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-red-50 to-orange-50 p-5 rounded-xl border border-red-100 text-center">
+                <div
+                    class="bg-gradient-to-br from-red-50 to-orange-50 p-5 rounded-xl border border-red-100 text-center">
                     <span class="text-xs sm:text-sm text-red-700 font-semibold block mb-1">
                         傳統房仲 2% 買方費 vs 本專案 1% 買方費：
                     </span>
@@ -90,7 +102,8 @@
                         現省 <span id="savings">37.7</span> 萬元
                     </div>
                     <p class="text-xs text-slate-500 mt-2">
-                        ※ 若計入賣方傳統 4% 降至 1%，買賣雙方合計最高可省 <span id="totalSavings" class="font-bold text-slate-700">150.8</span> 萬元！
+                        ※ 若計入賣方傳統 4% 降至 3%，買賣雙方合計最高可省 <span id="totalSavings"
+                            class="font-bold text-slate-700">75.4</span> 萬元！
                     </p>
                 </div>
             </div>
@@ -107,18 +120,20 @@
 
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- 物件 1: 1628 萬 (三峽 樂河郡-尚河) -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden card-hover transition duration-200 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden card-hover transition duration-200 flex flex-col justify-between">
                     <div>
                         <!-- 物件頂部標籤與圖片展示 -->
                         <div class="relative bg-slate-100 aspect-video overflow-hidden">
-                            <img src="https://img2.591.com.tw/house/2026/09/15/178944661541367400.jpg!1000x.water2.jpg" 
-                                 alt="樂河郡-尚河 2房+車" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80'">
-                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                            <img src="https://img2.591.com.tw/house/2026/09/15/178944661541367400.jpg!1000x.water2.jpg"
+                                alt="樂河郡-尚河 2房+車" class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80'">
+                            <span
+                                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-bold shadow">
                                 首購 / 換屋首選
                             </span>
-                            <span class="absolute bottom-3 right-3 bg-black/70 backdrop-blur text-white text-xs px-2.5 py-1 rounded font-medium">
+                            <span
+                                class="absolute bottom-3 right-3 bg-black/70 backdrop-blur text-white text-xs px-2.5 py-1 rounded font-medium">
                                 捷運站 550米
                             </span>
                         </div>
@@ -126,19 +141,28 @@
                         <div class="p-5 space-y-3">
                             <div class="flex justify-between items-start">
                                 <div>
-                                    <span class="text-xs text-slate-500 font-semibold tracking-wider uppercase">新北市三峽區民生街</span>
+                                    <span
+                                        class="text-xs text-slate-500 font-semibold tracking-wider uppercase">新北市三峽區民生街</span>
                                     <h3 class="text-lg font-bold text-slate-900">尚河 2房+車 採光視野佳</h3>
                                 </div>
                                 <div class="text-right">
-                                    <div class="text-2xl font-black text-red-600">1,628 <span class="text-sm font-normal text-slate-600">萬</span></div>
+                                    <div class="text-2xl font-black text-red-600">1,628 <span
+                                            class="text-sm font-normal text-slate-600">萬</span></div>
                                 </div>
                             </div>
 
                             <!-- 規格膠囊 -->
-                            <div class="grid grid-cols-3 gap-2 py-2 border-y border-slate-100 text-center text-xs text-slate-600">
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">建物坪數</span><strong class="text-slate-800 text-sm">37.4 坪</strong></div>
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">格局</span><strong class="text-slate-800 text-sm">2房/車位</strong></div>
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">專案省下</span><strong class="text-red-600 text-sm">省 16.3萬</strong></div>
+                            <div
+                                class="grid grid-cols-3 gap-2 py-2 border-y border-slate-100 text-center text-xs text-slate-600">
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">建物坪數</span><strong
+                                        class="text-slate-800 text-sm">37.4 坪</strong></div>
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">格局</span><strong
+                                        class="text-slate-800 text-sm">2房/車位</strong></div>
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">專案省下</span><strong class="text-red-600 text-sm">省
+                                        16.3萬</strong></div>
                             </div>
 
                             <p class="text-sm text-slate-600 leading-relaxed">
@@ -148,13 +172,14 @@
                     </div>
 
                     <div class="p-5 pt-0 space-y-2">
-                        <a href="https://www.591.com.tw/2S?salt=Sm4q8&s=al&from=share&kind=9" target="_blank" rel="noopener" 
-                           class="flex items-center justify-center gap-2 w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-sm font-semibold transition">
+                        <a href="https://www.591.com.tw/2S?salt=Sm4q8&s=al&from=share&kind=9" target="_blank"
+                            rel="noopener"
+                            class="flex items-center justify-center gap-2 w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-sm font-semibold transition">
                             <span>查看 591 完整規格照片</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
-                        <a href="tel:0933068110" 
-                           class="flex items-center justify-center gap-2 w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-sm shadow-md shadow-red-600/20 transition">
+                        <a href="tel:0933068110"
+                            class="flex items-center justify-center gap-2 w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-sm shadow-md shadow-red-600/20 transition">
                             <i class="fa-solid fa-phone"></i>
                             <span>預約看屋（鎖定 1% 服務費）</span>
                         </a>
@@ -162,18 +187,20 @@
                 </div>
 
                 <!-- 物件 2: 3770 萬 (台北萬華 榮耀西門) -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden card-hover transition duration-200 flex flex-col justify-between">
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden card-hover transition duration-200 flex flex-col justify-between">
                     <div>
                         <!-- 物件頂部標籤與圖片展示 -->
                         <div class="relative bg-slate-100 aspect-video overflow-hidden">
-                            <img src="https://img2.591.com.tw/house/2026/05/07/177808593052308500.jpg!1000x.water2.jpg" 
-                                 alt="榮耀西門 全新2房2衛2陽台" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80'">
-                            <span class="absolute top-3 left-3 bg-indigo-600 text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+                            <img src="https://img2.591.com.tw/house/2026/05/07/177808593052308500.jpg!1000x.water2.jpg"
+                                alt="榮耀西門 全新2房2衛2陽台" class="w-full h-full object-cover"
+                                onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80'">
+                            <span
+                                class="absolute top-3 left-3 bg-indigo-600 text-white text-xs px-3 py-1 rounded-full font-bold shadow">
                                 尊榮捷運核心宅
                             </span>
-                            <span class="absolute bottom-3 right-3 bg-black/70 backdrop-blur text-white text-xs px-2.5 py-1 rounded font-medium">
+                            <span
+                                class="absolute bottom-3 right-3 bg-black/70 backdrop-blur text-white text-xs px-2.5 py-1 rounded font-medium">
                                 西門捷運站 140米
                             </span>
                         </div>
@@ -181,19 +208,28 @@
                         <div class="p-5 space-y-3">
                             <div class="flex justify-between items-start">
                                 <div>
-                                    <span class="text-xs text-slate-500 font-semibold tracking-wider uppercase">台北市萬華區漢中街</span>
+                                    <span
+                                        class="text-xs text-slate-500 font-semibold tracking-wider uppercase">台北市萬華區漢中街</span>
                                     <h3 class="text-lg font-bold text-slate-900">榮耀西門 全新2房2衛2陽台</h3>
                                 </div>
                                 <div class="text-right">
-                                    <div class="text-2xl font-black text-red-600">3,770 <span class="text-sm font-normal text-slate-600">萬</span></div>
+                                    <div class="text-2xl font-black text-red-600">3,770 <span
+                                            class="text-sm font-normal text-slate-600">萬</span></div>
                                 </div>
                             </div>
 
                             <!-- 規格膠囊 -->
-                            <div class="grid grid-cols-3 gap-2 py-2 border-y border-slate-100 text-center text-xs text-slate-600">
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">建物坪數</span><strong class="text-slate-800 text-sm">33.66 坪</strong></div>
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">格局</span><strong class="text-slate-800 text-sm">2房2衛2陽</strong></div>
-                                <div class="bg-slate-50 p-2 rounded-lg"><span class="block text-slate-400">專案省下</span><strong class="text-red-600 text-sm">省 37.7萬</strong></div>
+                            <div
+                                class="grid grid-cols-3 gap-2 py-2 border-y border-slate-100 text-center text-xs text-slate-600">
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">建物坪數</span><strong
+                                        class="text-slate-800 text-sm">33.66 坪</strong></div>
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">格局</span><strong
+                                        class="text-slate-800 text-sm">2房2衛2陽</strong></div>
+                                <div class="bg-slate-50 p-2 rounded-lg"><span
+                                        class="block text-slate-400">專案省下</span><strong class="text-red-600 text-sm">省
+                                        37.7萬</strong></div>
                             </div>
 
                             <p class="text-sm text-slate-600 leading-relaxed">
@@ -203,13 +239,14 @@
                     </div>
 
                     <div class="p-5 pt-0 space-y-2">
-                        <a href="https://www.591.com.tw/2S?salt=SDVlo&s=al&from=share&kind=9" target="_blank" rel="noopener" 
-                           class="flex items-center justify-center gap-2 w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-sm font-semibold transition">
+                        <a href="https://www.591.com.tw/2S?salt=SDVlo&s=al&from=share&kind=9" target="_blank"
+                            rel="noopener"
+                            class="flex items-center justify-center gap-2 w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-sm font-semibold transition">
                             <span>查看 591 完整規格照片</span>
                             <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                         </a>
-                        <a href="tel:0933068110" 
-                           class="flex items-center justify-center gap-2 w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-sm shadow-md shadow-red-600/20 transition">
+                        <a href="tel:0933068110"
+                            class="flex items-center justify-center gap-2 w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl font-bold text-sm shadow-md shadow-red-600/20 transition">
                             <i class="fa-solid fa-phone"></i>
                             <span>預約看屋（鎖定 1% 服務費）</span>
                         </a>
@@ -221,24 +258,27 @@
         <!-- 為什麼選擇我們的 1% 專案？ -->
         <section class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-6">
             <h2 class="text-xl sm:text-2xl font-bold text-center">🏆 為什麼選擇「1% 服務費」專屬委託通路？</h2>
-            
+
             <div class="grid sm:grid-cols-3 gap-6 text-center">
                 <div class="space-y-2">
-                    <div class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                    <div
+                        class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
                     </div>
                     <h3 class="font-bold text-lg">買賣省荷包</h3>
                     <p class="text-slate-400 text-sm">不賺暴利服務費，買方省下契稅裝潢金，賣方拿回最大淨利。</p>
                 </div>
                 <div class="space-y-2">
-                    <div class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                    <div
+                        class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="font-bold text-lg">合約與履保無折扣</h3>
                     <p class="text-slate-400 text-sm">同樣享有完整特約代書簽約、銀行履約保證專戶，交易安全 100% 放心。</p>
                 </div>
                 <div class="space-y-2">
-                    <div class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
+                    <div
+                        class="w-12 h-12 bg-red-600/20 text-red-400 rounded-xl flex items-center justify-center mx-auto text-xl font-bold">
                         <i class="fa-solid fa-bolt"></i>
                     </div>
                     <h3 class="font-bold text-lg">精準快速配對</h3>
@@ -250,7 +290,7 @@
             <div class="pt-4 border-t border-slate-800 text-center">
                 <p class="text-sm text-slate-400 mb-3">想看更多區域好宅或尋找更多 1% 讓利特選物件？</p>
                 <a href="https://www.ibigfun.com/pages/index?mobile=0933068110" target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg">
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg">
                     <span>進入經紀人專屬精選好房店舖</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -259,7 +299,8 @@
 
         <!-- 頁尾 -->
         <footer class="text-center py-6 border-t border-slate-200 text-sm text-slate-500 space-y-3">
-            <p>房產專案諮詢專線：<a href="tel:0933068110" class="font-bold text-slate-900 underline text-base">0933-068-110</a></p>
+            <p>房產專案諮詢專線：<a href="tel:0933068110" class="font-bold text-slate-900 underline text-base">0933-068-110</a>
+            </p>
             <p class="text-xs text-slate-400">
                 本專案促銷活動與物件資訊以實際簽約委託現況為準。房屋產權資料與最新銷售狀態請洽專案經紀人員。
             </p>
@@ -267,14 +308,15 @@
     </main>
 
     <!-- 手機版懸浮快速通話/預約底欄 -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3 z-40 md:hidden sticky-bottom-bar flex gap-3">
-        <a href="tel:0933068110" 
-           class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow">
+    <div
+        class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3 z-40 md:hidden sticky-bottom-bar flex gap-3">
+        <a href="tel:0933068110"
+            class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow">
             <i class="fa-solid fa-phone"></i>
             <span>電話專人預約 (1% 優惠)</span>
         </a>
         <a href="https://www.ibigfun.com/pages/index?mobile=0933068110" target="_blank"
-           class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-xl flex items-center justify-center text-sm font-semibold">
+            class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-3 rounded-xl flex items-center justify-center text-sm font-semibold">
             <span>經紀人店鋪</span>
         </a>
     </div>
@@ -308,4 +350,5 @@
         updateSavings();
     </script>
 </body>
+
 </html>
