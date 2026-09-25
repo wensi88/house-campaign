@@ -3,11 +3,18 @@
 ===================================================================
 專案委託目標：
 1. 引導精準買家至委託經紀人專屬店鋪：https://www.ibigfun.com/pages/index?mobile=0933068110
-2. 強攻兩大精選物件：
-   - 物件 1: 三峽【樂河郡-尚河】2房+車 1,628萬 (https://www.591.com.tw/2S?salt=Sm4q8)
-   - 物件 2: 萬華【榮耀西門】捷運140m 2房2衛 3,770萬 (https://www.591.com.tw/2S?salt=SDVlo)
-3. 核心誘因：「僅收 1% 成交服務費」（現省 16.28 萬 ～ 37.7 萬以上）
-4. 精準截流機制：針對 591 房仲網、三峽/萬華區域關鍵字、捷運宅搜尋受眾進行關鍵字攔截與自訂意圖導流。
+2. 強攻 9 大精選好房與收租金店面：
+   - 1. 三峽【A43 豐耘漂亮2房車】1,780萬 (https://ibig.fun/WIx6G)
+   - 2. 樹林【B64 風呂幸福三房車】2,498萬 (https://ibig.fun/vVfNy)
+   - 3. 三峽【B59 劍橋溫馨靜謐三房車】2,680萬 (https://ibig.fun/SvJBd)
+   - 4. 汐止【F10 汐止景觀別墅】2,800萬 (https://ibig.fun/elNHK)
+   - 5. 鶯歌【D37 光復街店面】1,280萬 (https://ibig.fun/EB9Vw)
+   - 6. 三峽【D24 大義劍橋收租店面】4,600萬 (https://ibig.fun/1fGqX)
+   - 7. 三峽【G08 三峽竹崙風景美地】2,180萬 (https://ibig.fun/0YrqT)
+   - 8. 三峽【樂河郡-尚河 2房+車】1,628萬 (https://www.591.com.tw/2S?salt=Sm4q8)
+   - 9. 萬華【榮耀西門 全新精品2房】3,770萬 (https://www.591.com.tw/2S?salt=SDVlo)
+3. 核心誘因：「買方僅收 1% 成交服務費」（現省 12.8 萬 ～ 46.0 萬以上）
+4. 精準截流機制：針對 591 房仲網、各區域熱門關鍵字、捷運宅、北大特區、收租店面搜尋受眾進行關鍵字攔截與自訂意圖導流。
 """
 
 import os
@@ -17,35 +24,111 @@ from typing import Dict, List, Any
 # ==================== 專案參數與受眾關鍵字矩陣 ====================
 CAMPAIGN_CONFIG = {
     # 落地頁與導流入口
-    "LANDING_PAGE_URL": "https://www.ibigfun.com/pages/index?mobile=0933068110",
-    "CUSTOM_LANDING_PAGE": "https://your-domain-or-github-io-url.com", # 自建 1% 試算落地頁
+    "LANDING_PAGE_URL": "https://wensi88.github.io/house-campaign/",
+    "BROKER_SHOP_URL": "https://www.ibigfun.com/pages/index?mobile=0933068110",
     "BROKER_PHONE": "0933068110",
     "BROKER_PHONE_DISPLAY": "0933-068-110",
+    "BROKER_INFO": "三峽大義加盟店 林美不動產有限公司 莊文洲 (89) 宜字第00017號",
     
-    # 強攻物件資料庫
+    # 強攻 9 大物件資料庫
     "TARGET_PROPERTIES": [
+        {
+            "id": "item-WIx6G",
+            "name": "A43 豐耘漂亮2房車",
+            "region": "新北市三峽區大德路",
+            "price_wan": 1780,
+            "savings_wan": 17.8,
+            "size_ping": 37.66,
+            "rooms": "2房2廳1衛",
+            "target_url": "https://ibig.fun/WIx6G",
+            "utm_campaign": "sanxia_fengyun_1780m"
+        },
+        {
+            "id": "item-vVfNy",
+            "name": "B64 風呂幸福三房車",
+            "region": "新北市樹林區學勤路",
+            "price_wan": 2498,
+            "savings_wan": 25.0,
+            "size_ping": 53.77,
+            "rooms": "3房2廳2衛",
+            "target_url": "https://ibig.fun/vVfNy",
+            "utm_campaign": "shulin_fenglu_2498m"
+        },
+        {
+            "id": "item-SvJBd",
+            "name": "B59 劍橋溫馨靜謐三房車",
+            "region": "新北市三峽區學勤路",
+            "price_wan": 2680,
+            "savings_wan": 26.8,
+            "size_ping": 53.81,
+            "rooms": "3房2廳2衛",
+            "target_url": "https://ibig.fun/SvJBd",
+            "utm_campaign": "sanxia_cambridge_2680m"
+        },
+        {
+            "id": "item-elNHK",
+            "name": "F10 汐止景觀別墅",
+            "region": "新北市汐止區東勢街",
+            "price_wan": 2800,
+            "savings_wan": 28.0,
+            "size_ping": 93.81,
+            "rooms": "4房2廳3衛透天",
+            "target_url": "https://ibig.fun/elNHK",
+            "utm_campaign": "xizhi_villa_2800m"
+        },
+        {
+            "id": "item-EB9Vw",
+            "name": "D37 光復街店面",
+            "region": "新北市鶯歌區光復街",
+            "price_wan": 1280,
+            "savings_wan": 12.8,
+            "size_ping": 19.85,
+            "rooms": "金店面",
+            "target_url": "https://ibig.fun/EB9Vw",
+            "utm_campaign": "yingge_guangfu_1280m"
+        },
+        {
+            "id": "item-1fGqX",
+            "name": "D24 大義劍橋收租店面",
+            "region": "新北市三峽區大義路",
+            "price_wan": 4600,
+            "savings_wan": 46.0,
+            "size_ping": 60.72,
+            "rooms": "收租店面(月租6.5萬)",
+            "target_url": "https://ibig.fun/1fGqX",
+            "utm_campaign": "sanxia_dayi_shop_4600m"
+        },
+        {
+            "id": "item-0YrqT",
+            "name": "G08 三峽竹崙風景美地",
+            "region": "新北市三峽區竹崙路",
+            "price_wan": 2180,
+            "savings_wan": 21.8,
+            "size_ping": 2683.78,
+            "rooms": "休閒林業用地/農地",
+            "target_url": "https://ibig.fun/0YrqT",
+            "utm_campaign": "sanxia_zhulun_land_2180m"
+        },
         {
             "id": "item-1628",
             "name": "樂河郡-尚河 2房+車",
-            "full_title": "尚河2房+車採光視野佳捷運站550米",
-            "region": "新北市三峽區",
+            "region": "新北市三峽區民生街",
             "price_wan": 1628,
-            "savings_wan": 16.28,
+            "savings_wan": 16.3,
             "size_ping": 37.4,
-            "rooms": "2房",
-            "591_url": "https://www.591.com.tw/2S?salt=Sm4q8&s=al&from=share&kind=9",
+            "rooms": "2房/車位",
+            "target_url": "https://www.591.com.tw/2S?salt=Sm4q8&s=al&from=share&kind=9",
             "utm_campaign": "sanxia_lehe_1628m"
         },
         {
             "id": "item-3770",
             "name": "榮耀西門 全新捷運2房2衛",
-            "full_title": "漢中街,西門捷運站旁140米,全新2房2衛2陽台",
             "region": "台北市萬華區漢中街",
             "price_wan": 3770,
-            "savings_wan": 37.70,
+            "savings_wan": 37.7,
             "size_ping": 33.66,
-            "rooms": "2房2衛",
-            "591_url": "https://www.591.com.tw/2S?salt=SDVlo&s=al&from=share&kind=9",
+            "rooms": "全新2房2衛",
+            "target_url": "https://www.591.com.tw/2S?salt=SDVlo&s=al&from=share&kind=9",
             "utm_campaign": "wanhua_ximen_3770m"
         }
     ],
@@ -55,19 +138,25 @@ CAMPAIGN_CONFIG = {
         # 1. 591 品牌與競品意圖攔截詞
         "591_COMPETITOR_INTERCEPT": [
             "591 買屋", "591 房屋交易", "591 台北買房", "591 新北買房",
-            "591 仲介服務費", "591 服務費折扣", "591 三峽買屋", "591 萬華買屋"
+            "591 仲介服務費", "591 服務費折扣", "591 三峽買屋", "591 北大特區買房"
         ],
-        # 2. 三峽 1628 萬物件精準詞
-        "SANXIA_1628M_KEYWORDS": [
-            "三峽 樂河郡", "樂河郡 尚河", "三峽 2房 車位", "三峽 捷運宅 買屋",
-            "三峽 1500萬 1800萬 買房", "三峽 民生街 買屋", "三峽 中古屋 推薦"
+        # 2. 三峽 / 北大特區精選物件關鍵字
+        "SANXIA_BEIDA_KEYWORDS": [
+            "三峽 豐耘 2房", "三峽 北大特區 買房", "北大特區 遠雄劍橋 3房",
+            "樹林 北大風呂 3房車", "三峽 樂河郡", "三峽 買屋 推薦", "北大特區 電梯大樓"
         ],
-        # 3. 萬華西門 3770 萬物件精準詞
-        "WANHUA_3770M_KEYWORDS": [
+        # 3. 汐止別墅 / 鶯歌三峽店面土地關鍵字
+        "VILLA_SHOP_LAND_KEYWORDS": [
+            "汐止 景觀別墅 買賣", "汐止 東勢街 研究苑 別墅", "近中研院 透天別墅",
+            "鶯歌 光復街 店面", "鶯歌 火車站 店面 出售", "三峽 大義路 收租店面",
+            "三峽 竹崙 休閒農地", "新北市 林業用地 買賣"
+        ],
+        # 4. 萬華西門捷運宅精準詞
+        "WANHUA_XIMEN_KEYWORDS": [
             "榮耀西門", "西門捷運站 買屋", "漢中街 買房", "萬華 2房 2衛 新成屋",
-            "萬華 捷運宅 出售", "西門町 住宅 買賣", "台北市 3500萬 4000萬 捷運"
+            "萬華 捷運宅 出售", "台北市 3500萬 4000萬 捷運"
         ],
-        # 4. 1% 讓利 / 房仲服務費痛點詞
+        # 5. 1% 讓利 / 房仲服務費痛點詞
         "COMMISSION_SAVINGS_KEYWORDS": [
             "房仲服務費 1%", "買房 仲介費 折扣", "房屋買賣 服務費 談判",
             "買賣房屋 省仲介費", "1% 服務費 房仲", "買方 1% 服務費"
@@ -76,8 +165,11 @@ CAMPAIGN_CONFIG = {
 
     # 自訂意圖受眾 (Custom Intent Audience - 曾搜尋或瀏覽以下 URL/關鍵字之用戶)
     "CUSTOM_INTENT_URLS": [
-        "https://sale.591.com.tw/?shType=list&regionid=3&section=40", # 591 三峽區售屋
-        "https://sale.591.com.tw/?shType=list&regionid=1&section=6",  # 591 萬華區售屋
+        "https://sale.591.com.tw/?shType=list&regionid=3&section=40", # 591 三峽
+        "https://sale.591.com.tw/?shType=list&regionid=3&section=39", # 591 樹林
+        "https://sale.591.com.tw/?shType=list&regionid=3&section=36", # 591 汐止
+        "https://sale.591.com.tw/?shType=list&regionid=3&section=41", # 591 鶯歌
+        "https://sale.591.com.tw/?shType=list&regionid=1&section=6",  # 591 萬華
         "https://www.rakuya.com.tw",                                   # 樂屋網
         "https://buy.housefun.com.tw"                                  # 好房網
     ]
@@ -93,15 +185,16 @@ def build_google_ads_payload(customer_id: str):
     ad_copies = [
         {
             "headlines": [
-                "成交僅收 1% 買賣服務費",
-                "三峽樂河郡 1628萬 2房車",
-                "西門捷運140米 榮耀西門 3770萬",
-                "傳統2%現降為1% 省數十萬",
+                "成交僅收 1% 買方服務費",
+                "三峽北大/樹林/汐止/西門精選",
+                "北大特區 豐耘/劍橋/風呂好宅",
+                "汐止景觀別墅 2800萬",
+                "大義路收租金店面 4600萬",
                 "專屬經紀人 0933-068-110"
             ],
             "descriptions": [
-                "買賣房屋告別高額仲介費！本專案專屬通道成交僅收1%，為您省下辛苦血汗錢。",
-                "精選三峽捷運宅1628萬與西門核心全新2房3770萬，產權清晰完整履保，立即預約！"
+                "買賣房屋告別高額仲介費！本專案專屬通道成交買方僅收1%，為您省下辛苦血汗錢。",
+                "精選三峽北大特區、汐止別墅、收租金店面與西門捷運宅，產權清晰完整履保，立即預約！"
             ]
         }
     ]
@@ -118,7 +211,7 @@ def deploy_google_campaign(client, customer_id: str):
         campaign_operation = client.get_type("CampaignOperation")
         campaign = campaign_operation.create
 
-        campaign.name = "房產專案_591意圖攔截與1%讓利專案"
+        campaign.name = "房產專案_9大物件意圖攔截與1%讓利專案"
         campaign.advertising_channel_type = client.enums.AdvertisingChannelTypeEnum.SEARCH
         campaign.status = client.enums.CampaignStatusEnum.PAUSED
         campaign.manual_cpc.enhanced_cpc_enabled = True
@@ -133,7 +226,7 @@ def deploy_google_campaign(client, customer_id: str):
 def deploy_meta_campaign(act_id: str, access_token: str, app_id: str, app_secret: str):
     """
     透過 Meta Business SDK 建立高轉化導流廣告
-    鎖定新北三峽、台北萬華周邊 15km 購屋意圖族群
+    鎖定新北三峽/樹林/鶯歌/汐止、台北萬華周邊 15km 購屋意圖族群
     """
     try:
         from facebook_business.api import FacebookAdsApi
@@ -147,7 +240,7 @@ def deploy_meta_campaign(act_id: str, access_token: str, app_id: str, app_secret
         campaign = account.create_campaign(
             fields=[Campaign.Field.id, Campaign.Field.name],
             params={
-                Campaign.Field.name: "房地產 1% 讓利特選專案_導流活動",
+                Campaign.Field.name: "房地產 1% 讓利特選專案_9大物件導流",
                 Campaign.Field.objective: "OUTCOME_TRAFFIC",
                 Campaign.Field.status: Campaign.Status.paused,
                 Campaign.Field.special_ad_categories: ["HOUSING"], # 房地產專用類別
@@ -167,22 +260,22 @@ def generate_utm_links() -> Dict[str, str]:
     """
     base_url = CAMPAIGN_CONFIG["LANDING_PAGE_URL"]
     links = {
-        "Google_Search_Ads": f"{base_url}&utm_source=google&utm_medium=cpc&utm_campaign=house_1pct_commission&utm_content=591_intent",
-        "Meta_FB_Feed_Ads": f"{base_url}&utm_source=facebook&utm_medium=paid_social&utm_campaign=house_1pct_commission&utm_content=sanxia_ximen_carousel",
-        "LINE_Official_Direct": f"{base_url}&utm_source=line&utm_medium=direct_chat&utm_campaign=house_1pct_commission"
+        "Google_Search_Ads": f"{base_url}?utm_source=google&utm_medium=cpc&utm_campaign=house_1pct_commission&utm_content=search_intent",
+        "Meta_FB_Feed_Ads": f"{base_url}?utm_source=facebook&utm_medium=paid_social&utm_campaign=house_1pct_commission&utm_content=9properties_carousel",
+        "LINE_Official_Direct": f"{base_url}?utm_source=line&utm_medium=direct_chat&utm_campaign=house_1pct_commission"
     }
     return links
 
 
 # ==================== 主程式執行與檢視 ====================
 if __name__ == "__main__":
-    print("=" * 60)
-    print("🏠 房地產「1% 服務費」跨平台精準截流與導流系統")
-    print("=" * 60)
+    print("=" * 65)
+    print("🏠 房地產「1% 服務費」跨平台精準截流與導流系統 (9大物件完整版)")
+    print("=" * 65)
     
-    print("\n【強攻物件清單】")
-    for obj in CAMPAIGN_CONFIG["TARGET_PROPERTIES"]:
-        print(f" • [{obj['name']}] 總價: {obj['price_wan']}萬 | 省下服務費: ~{obj['savings_wan']}萬 | 591連結: {obj['591_url']}")
+    print("\n【9 大強攻物件清單】")
+    for i, obj in enumerate(CAMPAIGN_CONFIG["TARGET_PROPERTIES"], 1):
+        print(f" {i}. [{obj['name']}] 總價: {obj['price_wan']}萬 | 坪數: {obj['size_ping']}坪 | 省下服務費: ~{obj['savings_wan']}萬")
 
     print("\n【精準意圖攔截關鍵字矩陣】")
     for group, kw_list in CAMPAIGN_CONFIG["KEYWORD_GROUPS"].items():
@@ -192,4 +285,5 @@ if __name__ == "__main__":
     for channel, link in generate_utm_links().items():
         print(f" 🔗 {channel}:\n    {link}")
 
-    print("\n系統配置完成。可直接搭配 GitHub Pages / Netlify 上線落地頁，並對接 Google & Meta Ads API 啟用投放。")
+    print(f"\n【經紀人執業資訊】: {CAMPAIGN_CONFIG['BROKER_INFO']}")
+    print("系統配置完成。所有物件與廣告矩陣已同步。")
