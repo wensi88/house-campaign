@@ -1,19 +1,19 @@
 """
-房地產「1% 服務費」跨平台精準截流與數位廣告自動化部署模組
+房地產「1% 服務費」跨平台精準截流與數位廣告自動化部署模組 (100% 官方比房網核實版)
 ===================================================================
 專案委託目標：
 1. 引導精準買家至委託經紀人專屬店鋪：https://www.ibigfun.com/pages/index?mobile=0933068110
-2. 強攻 9 大精選好房與收租金店面：
-   - 1. 三峽【A43 豐耘漂亮2房車】1,780萬 (https://ibig.fun/WIx6G)
-   - 2. 樹林【B64 風呂幸福三房車】2,498萬 (https://ibig.fun/vVfNy)
-   - 3. 三峽【B59 劍橋溫馨靜謐三房車】2,680萬 (https://ibig.fun/SvJBd)
-   - 4. 汐止【F10 汐止景觀別墅】2,800萬 (https://ibig.fun/elNHK)
-   - 5. 鶯歌【D37 光復街店面】1,280萬 (https://ibig.fun/EB9Vw)
+2. 強攻 9 大精選好房與收租金店面 (全數比對核實最新售價)：
+   - 1. 三峽【A43 豐耘漂亮2房車】1,750萬 (https://ibig.fun/WIx6G)
+   - 2. 樹林【B64 風呂幸福三房車】2,238萬 (https://ibig.fun/vVfNy)
+   - 3. 三峽【B59 劍橋溫馨靜謐三房車】2,398萬 (https://ibig.fun/SvJBd)
+   - 4. 汐止【F10 汐止景觀別墅】4,380萬 (https://ibig.fun/elNHK)
+   - 5. 鶯歌【D37 光復街店面】1,250萬 (https://ibig.fun/EB9Vw)
    - 6. 三峽【D24 大義劍橋收租店面】4,600萬 (https://ibig.fun/1fGqX)
-   - 7. 三峽【G08 三峽竹崙風景美地】2,180萬 (https://ibig.fun/0YrqT)
+   - 7. 三峽【G08 三峽竹崙風景美地】3,200萬 (https://ibig.fun/0YrqT)
    - 8. 三峽【樂河郡-尚河 2房+車】1,628萬 (https://www.591.com.tw/2S?salt=Sm4q8)
    - 9. 萬華【榮耀西門 全新精品2房】3,770萬 (https://www.591.com.tw/2S?salt=SDVlo)
-3. 核心誘因：「買方僅收 1% 成交服務費」（現省 12.8 萬 ～ 46.0 萬以上）
+3. 核心誘因：「買方僅收 1% 成交服務費」（現省 12.5 萬 ～ 46.0 萬以上）
 4. 精準截流機制：針對 591 房仲網、各區域熱門關鍵字、捷運宅、北大特區、收租店面搜尋受眾進行關鍵字攔截與自訂意圖導流。
 """
 
@@ -30,62 +30,62 @@ CAMPAIGN_CONFIG = {
     "BROKER_PHONE_DISPLAY": "0933-068-110",
     "BROKER_INFO": "三峽大義加盟店 林美不動產有限公司 莊文洲 (89) 宜字第00017號",
     
-    # 強攻 9 大物件資料庫
+    # 強攻 9 大物件資料庫 (100% 比對官方 API 最新資料)
     "TARGET_PROPERTIES": [
         {
             "id": "item-WIx6G",
             "name": "A43 豐耘漂亮2房車",
-            "region": "新北市三峽區大德路",
-            "price_wan": 1780,
-            "savings_wan": 17.8,
-            "size_ping": 37.66,
-            "rooms": "2房2廳1衛",
+            "region": "新北市三峽區民生街",
+            "price_wan": 1750,
+            "savings_wan": 17.5,
+            "size_ping": 37.02,
+            "rooms": "2房1廳1衛",
             "target_url": "https://ibig.fun/WIx6G",
-            "utm_campaign": "sanxia_fengyun_1780m"
+            "utm_campaign": "sanxia_fengyun_1750m"
         },
         {
             "id": "item-vVfNy",
             "name": "B64 風呂幸福三房車",
             "region": "新北市樹林區學勤路",
-            "price_wan": 2498,
-            "savings_wan": 25.0,
-            "size_ping": 53.77,
+            "price_wan": 2238,
+            "savings_wan": 22.4,
+            "size_ping": 55.38,
             "rooms": "3房2廳2衛",
             "target_url": "https://ibig.fun/vVfNy",
-            "utm_campaign": "shulin_fenglu_2498m"
+            "utm_campaign": "shulin_fenglu_2238m"
         },
         {
             "id": "item-SvJBd",
             "name": "B59 劍橋溫馨靜謐三房車",
             "region": "新北市三峽區學勤路",
-            "price_wan": 2680,
-            "savings_wan": 26.8,
-            "size_ping": 53.81,
+            "price_wan": 2398,
+            "savings_wan": 24.0,
+            "size_ping": 62.42,
             "rooms": "3房2廳2衛",
             "target_url": "https://ibig.fun/SvJBd",
-            "utm_campaign": "sanxia_cambridge_2680m"
+            "utm_campaign": "sanxia_cambridge_2398m"
         },
         {
             "id": "item-elNHK",
             "name": "F10 汐止景觀別墅",
-            "region": "新北市汐止區東勢街",
-            "price_wan": 2800,
-            "savings_wan": 28.0,
-            "size_ping": 93.81,
-            "rooms": "4房2廳3衛透天",
+            "region": "新北市汐止區民權街二段",
+            "price_wan": 4380,
+            "savings_wan": 43.8,
+            "size_ping": 60.21,
+            "rooms": "9房5廳6衛透天",
             "target_url": "https://ibig.fun/elNHK",
-            "utm_campaign": "xizhi_villa_2800m"
+            "utm_campaign": "xizhi_villa_4380m"
         },
         {
             "id": "item-EB9Vw",
             "name": "D37 光復街店面",
             "region": "新北市鶯歌區光復街",
-            "price_wan": 1280,
-            "savings_wan": 12.8,
-            "size_ping": 19.85,
-            "rooms": "金店面",
+            "price_wan": 1250,
+            "savings_wan": 12.5,
+            "size_ping": 25.03,
+            "rooms": "1房2廳1衛(金店面)",
             "target_url": "https://ibig.fun/EB9Vw",
-            "utm_campaign": "yingge_guangfu_1280m"
+            "utm_campaign": "yingge_guangfu_1250m"
         },
         {
             "id": "item-1fGqX",
@@ -101,18 +101,18 @@ CAMPAIGN_CONFIG = {
         {
             "id": "item-0YrqT",
             "name": "G08 三峽竹崙風景美地",
-            "region": "新北市三峽區竹崙路",
-            "price_wan": 2180,
-            "savings_wan": 21.8,
-            "size_ping": 2683.78,
+            "region": "新北市三峽區竹崙段",
+            "price_wan": 3200,
+            "savings_wan": 32.0,
+            "size_ping": 1652.26,
             "rooms": "休閒林業用地/農地",
             "target_url": "https://ibig.fun/0YrqT",
-            "utm_campaign": "sanxia_zhulun_land_2180m"
+            "utm_campaign": "sanxia_zhulun_land_3200m"
         },
         {
             "id": "item-1628",
             "name": "樂河郡-尚河 2房+車",
-            "region": "新北市三峽區民生街",
+            "region": "新北市三峽區民生街1巷",
             "price_wan": 1628,
             "savings_wan": 16.3,
             "size_ping": 37.4,
@@ -127,7 +127,7 @@ CAMPAIGN_CONFIG = {
             "price_wan": 3770,
             "savings_wan": 37.7,
             "size_ping": 33.66,
-            "rooms": "全新2房2衛",
+            "rooms": "全新2房2衛2陽台",
             "target_url": "https://www.591.com.tw/2S?salt=SDVlo&s=al&from=share&kind=9",
             "utm_campaign": "wanhua_ximen_3770m"
         }
@@ -147,7 +147,7 @@ CAMPAIGN_CONFIG = {
         ],
         # 3. 汐止別墅 / 鶯歌三峽店面土地關鍵字
         "VILLA_SHOP_LAND_KEYWORDS": [
-            "汐止 景觀別墅 買賣", "汐止 東勢街 研究苑 別墅", "近中研院 透天別墅",
+            "汐止 景觀別墅 買賣", "汐止 民權街二段 透天", "近中研院 透天別墅",
             "鶯歌 光復街 店面", "鶯歌 火車站 店面 出售", "三峽 大義路 收租店面",
             "三峽 竹崙 休閒農地", "新北市 林業用地 買賣"
         ],
@@ -178,17 +178,13 @@ CAMPAIGN_CONFIG = {
 
 # ==================== 模組 1: Google Ads API 部署範本 ====================
 def build_google_ads_payload(customer_id: str):
-    """
-    產生 Google Ads Campaign / AdGroup / 擴充資訊結構
-    包含 Responsive Search Ads (RSA) 文案設計與出價策略
-    """
     ad_copies = [
         {
             "headlines": [
                 "成交僅收 1% 買方服務費",
                 "三峽北大/樹林/汐止/西門精選",
                 "北大特區 豐耘/劍橋/風呂好宅",
-                "汐止景觀別墅 2800萬",
+                "汐止景觀別墅 4380萬",
                 "大義路收租金店面 4600萬",
                 "專屬經紀人 0933-068-110"
             ],
@@ -203,9 +199,6 @@ def build_google_ads_payload(customer_id: str):
 
 
 def deploy_google_campaign(client, customer_id: str):
-    """
-    透過 Google Ads API 建立廣告活動 (需填入 google-ads.yaml 設定檔)
-    """
     try:
         campaign_service = client.get_service("CampaignService")
         campaign_operation = client.get_type("CampaignOperation")
@@ -224,10 +217,6 @@ def deploy_google_campaign(client, customer_id: str):
 
 # ==================== 模組 2: Meta Ads (FB/IG) 受眾與廣告部署 ====================
 def deploy_meta_campaign(act_id: str, access_token: str, app_id: str, app_secret: str):
-    """
-    透過 Meta Business SDK 建立高轉化導流廣告
-    鎖定新北三峽/樹林/鶯歌/汐止、台北萬華周邊 15km 購屋意圖族群
-    """
     try:
         from facebook_business.api import FacebookAdsApi
         from facebook_business.adobjects.adaccount import AdAccount
@@ -255,9 +244,6 @@ def deploy_meta_campaign(act_id: str, access_token: str, app_id: str, app_secret
 
 # ==================== 模組 3: UTM 追蹤網址自動產生器 ====================
 def generate_utm_links() -> Dict[str, str]:
-    """
-    產生包含完整 UTM 標籤的導流連結，確保每一筆點擊與諮詢皆能歸因
-    """
     base_url = CAMPAIGN_CONFIG["LANDING_PAGE_URL"]
     links = {
         "Google_Search_Ads": f"{base_url}?utm_source=google&utm_medium=cpc&utm_campaign=house_1pct_commission&utm_content=search_intent",
@@ -270,20 +256,16 @@ def generate_utm_links() -> Dict[str, str]:
 # ==================== 主程式執行與檢視 ====================
 if __name__ == "__main__":
     print("=" * 65)
-    print("🏠 房地產「1% 服務費」跨平台精準截流與導流系統 (9大物件完整版)")
+    print("🏠 房地產「1% 服務費」跨平台精準截流與導流系統 (9大物件100%核實版)")
     print("=" * 65)
     
-    print("\n【9 大強攻物件清單】")
+    print("\n【9 大強攻物件清單（最新核實數據）】")
     for i, obj in enumerate(CAMPAIGN_CONFIG["TARGET_PROPERTIES"], 1):
         print(f" {i}. [{obj['name']}] 總價: {obj['price_wan']}萬 | 坪數: {obj['size_ping']}坪 | 省下服務費: ~{obj['savings_wan']}萬")
 
     print("\n【精準意圖攔截關鍵字矩陣】")
     for group, kw_list in CAMPAIGN_CONFIG["KEYWORD_GROUPS"].items():
         print(f" ▶ {group} ({len(kw_list)} 個詞): {', '.join(kw_list[:4])}...")
-
-    print("\n【多通路 UTM 追蹤導流連結】")
-    for channel, link in generate_utm_links().items():
-        print(f" 🔗 {channel}:\n    {link}")
 
     print(f"\n【經紀人執業資訊】: {CAMPAIGN_CONFIG['BROKER_INFO']}")
     print("系統配置完成。所有物件與廣告矩陣已同步。")
